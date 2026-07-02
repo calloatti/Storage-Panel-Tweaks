@@ -1,0 +1,7 @@
+Game Version: 1.0.0.0 - Mod Version: 1.1.0
+- UI improvements
+- Refactored goods dropdown filter
+--------------------------------------------------------------------------------
+Game Version: 1.0.0.0 - Mod Version: 1.0.0
+- Initial release
+--------------------------------------------------------------------------------
