@@ -359,7 +359,7 @@ namespace StoragePanelTweaks
     {
       if (_currentTab == null) return;
 
-      var rows = Traverse.Create(__instance).Field("_rows").GetValue<List<BatchControlRow>>();
+      var rows = __instance._rows;
       if (rows == null) return;
 
       int visibleCount = 0;
@@ -401,7 +401,7 @@ namespace StoragePanelTweaks
         }
       }
 
-      var headerRow = Traverse.Create(__instance).Field("_headerRow").GetValue<BatchControlRow>();
+      var headerRow = __instance._headerRow;
       if (headerRow != null)
       {
         bool showHeader = visibleCount > 0;
@@ -409,7 +409,7 @@ namespace StoragePanelTweaks
         __result = showHeader;
       }
 
-      Traverse.Create(__instance).Property("VisibleChildrenCount").SetValue(visibleCount);
+      __instance.VisibleChildrenCount = visibleCount;
     }
 
     private class ColumnLayout

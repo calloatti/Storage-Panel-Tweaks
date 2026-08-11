@@ -18,6 +18,6 @@ Tweaks the storage panel UI: removes unnecessary stock capacity indicators, adds
 |---|---|
 | `ModStarter.cs` | Entry point — `IModStarter` |
 | `ModConfigurator.cs` | DI configurator |
-| `StorageTabPatch.cs` | Storage tab UI patches |
+| `StorageTabPatch.cs` | Storage tab UI patches — `_rows`, `_headerRow`, and `VisibleChildrenCount` on `BatchControlRowGroup` are accessed **directly** (BatchControl is publicized via `CommonModSettings.props`; was `Traverse` before publicization) |
 | `StorageRowComparer.cs` | Row sorting logic |
 | `StockCapacityRemovalPatch.cs` | Stock capacity visual removal |
