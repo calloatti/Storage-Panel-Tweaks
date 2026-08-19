@@ -7,8 +7,7 @@ namespace StoragePanelTweaks
     {
         public void StartMod(IModEnvironment modEnvironment)
         {
-            var harmony = new Harmony("StoragePanelTweaks.Mod");
-            harmony.PatchAll(typeof(ModStarter).Assembly);
+new Harmony("Calloatti.StoragePanelTweaks").PatchAll();
         }
     }
 }

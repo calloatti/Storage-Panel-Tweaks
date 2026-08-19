@@ -21,3 +21,8 @@ Tweaks the storage panel UI: removes unnecessary stock capacity indicators, adds
 | `StorageTabPatch.cs` | Storage tab UI patches — `_rows`, `_headerRow`, and `VisibleChildrenCount` on `BatchControlRowGroup` are accessed **directly** (BatchControl is publicized via `CommonModSettings.props`; was `Traverse` before publicization) |
 | `StorageRowComparer.cs` | Row sorting logic |
 | `StockCapacityRemovalPatch.cs` | Stock capacity visual removal |
+
+## Hard Rule
+DO NOT EVER TOUCH THE DEPLOY FOLDER.
+
+BUILD DOES EVERYTHING, NEVER EVER MESS WITH THE DEPLOY PROCESS.
