@@ -2,7 +2,7 @@
   "Name": "Storage Panel Tweaks",
   "Version": "1.1.2",
   "Id": "Calloatti.StoragePanelTweaks",
-  "MinimumGameVersion": "1.0.13.1",
+  "MinimumGameVersion": "1.1.2.4",
   "Description": "Lists all storage buildings in a single sortable and filterable panel instead of grouped by building type.",
   "RequiredMods": [{"Id": "Harmony", "MinVersion": "2.4.1"}],
   "OptionalMods": []
